@@ -1,15 +1,30 @@
 .wrapper {
   display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
+  min-height: 97vh;
+  background-color: $gray-100;
+
+  @media (max-width: 576px) {
+    min-height: 94vh;
+  }
 }
+
+main {
+  background-color: $gray-100;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
-  margin: 1.8rem;
-}
+  padding: 0.2rem 1.8rem;
+  background-color: $light;
+  height: 3vh;
 
-@media (max-width: 768px) {
-  footer {
+  @media (max-width: 576px) {
+    padding: 1rem 1.8rem;
+    text-align: center;
+    height: 6vh;
     flex-direction: column;
   }
 }
